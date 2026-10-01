@@ -1,0 +1,67 @@
+&lt;!doctype html&gt;&lt;html lang="es"&gt;&lt;head&gt;&lt;meta charset="utf-8"&gt;&lt;title&gt;Catálogo — La Biblioteca de Arnulfo Novo&lt;/title&gt;&lt;style&gt;
+body{font-family:Georgia,'Times New Roman',serif;background:#faf8f1;color:#2c2c2c;margin:0;padding:0;line-height:1.6}
+a{color:#6b3a2a;text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:#4a3020;color:#faf8f1;padding:1rem 2rem}
+nav{max-width:900px;margin:0 auto;display:flex;gap:1.5rem}
+nav a{color:#faf8f1;padding:.5rem .8rem;border-radius:4px;transition:background .2s}
+nav a:hover,nav a.active{background:rgba(255,255,255,.15);text-decoration:none}
+main{max-width:900px;margin:2rem auto;padding:0 2rem}
+h1{font-size:1.8rem;margin:.5rem 0 1rem;color:#faf8f1}
+.note{background:#f5efe0;border-left:4px solid #6b3a2a;padding:.75rem 1rem;margin:1.5rem 0;border-radius:4px;font-style:italic}
+#search-box{width:100%;max-width:400px;padding:.6rem 1rem;border:1px solid #c4b89e;border-radius:6px;font-size:1rem;background:#fff;margin:1rem 0;font-family:inherit}
+table{width:100%;border-collapse:collapse;margin-top:1rem}
+th{background:#4a3020;color:#faf8f1;padding:.65rem .75rem;text-align:left;font-weight:600}
+td{padding:.55rem .75rem;border-bottom:1px solid #e0d8c8;vertical-align:top}
+tr:hover{background:#f0ead8}
+td:nth-child(4){text-align:center}
+td:nth-child(5){text-align:center}
+td:nth-child(6){font-size:.9rem;color:#555}
+@media(max-width:600px){table,thead,tbody,th,td,tr{display:block}th{display:none}td{border-left:0;border-bottom:1px solid #e0d8c8;padding:.4rem .75rem}td::before{content:attr(data-label);font-weight:600;color:#4a3020}}
+&lt;/style&gt;&lt;/head&gt;&lt;body&gt;
+&lt;header&gt;&lt;nav&gt;&lt;a href="index.html"&gt;Inicio&lt;/a&gt;&lt;a href="catalogo-v2.html" class="active"&gt;Catálogo&lt;/a&gt;&lt;a href="resenas.html"&gt;Mis reseñas&lt;/a&gt;&lt;a href="archivo.html"&gt;Archivo&lt;/a&gt;&lt;/nav&gt;
+&lt;h1&gt;Catálogo&lt;/h1&gt;&lt;/header&gt;
+&lt;main&gt;
+&lt;p class="note"&gt;Migración del catálogo en curso. Esta copia todavía no representa el catálogo completo.&lt;/p&gt;
+&lt;input type="text" id="search-box" placeholder="Buscar por título, autor, género…" aria-label="Buscar en el catálogo"&gt;
+&lt;table id="catalog-table"&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Título&lt;/th&gt;&lt;th&gt;Autor&lt;/th&gt;&lt;th&gt;Estado&lt;/th&gt;&lt;th&gt;Físico&lt;/th&gt;&lt;th&gt;Estrellas&lt;/th&gt;&lt;th&gt;Género&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+&lt;tbody id="catalog-body"&gt;
+&lt;tr data-generos="Terror"&gt;&lt;td&gt;No dejes entrar al bosque&lt;/td&gt;&lt;td&gt;C.G. Drews&lt;/td&gt;&lt;td&gt;Leído&lt;/td&gt;&lt;td&gt;No&lt;/td&gt;&lt;td&gt;★☆☆☆☆ 1&lt;/td&gt;&lt;td&gt;Terror&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Terror"&gt;&lt;td&gt;The House&lt;/td&gt;&lt;td&gt;Bentley Little&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;No&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Terror&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Misterio y thriller"&gt;&lt;td&gt;El pozo&lt;/td&gt;&lt;td&gt;Hye-Young Pyun&lt;/td&gt;&lt;td&gt;Leído&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;★★★☆☆ 3&lt;/td&gt;&lt;td&gt;Misterio y thriller&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Misterio y thriller"&gt;&lt;td&gt;Cierra todas las puertas&lt;/td&gt;&lt;td&gt;Riley Sager&lt;/td&gt;&lt;td&gt;Leído&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;★★★★☆ 4&lt;/td&gt;&lt;td&gt;Misterio y thriller&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Terror"&gt;&lt;td&gt;Ofrendas de verano&lt;/td&gt;&lt;td&gt;Robert Marasco&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Terror&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Terror"&gt;&lt;td&gt;Relatos de la noche&lt;/td&gt;&lt;td&gt;Uriel Reyes&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Terror&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Narrativa literaria"&gt;&lt;td&gt;Te receto un gato (Te receto un gato, #1)&lt;/td&gt;&lt;td&gt;Syou Ishida&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Narrativa literaria&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Misterio y thriller"&gt;&lt;td&gt;Billy Summers&lt;/td&gt;&lt;td&gt;Stephen King&lt;/td&gt;&lt;td&gt;Leído&lt;/td&gt;&lt;td&gt;No&lt;/td&gt;&lt;td&gt;★★★☆☆ 3&lt;/td&gt;&lt;td&gt;Misterio y thriller&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Misterio y thriller"&gt;&lt;td&gt;Los destrozos&lt;/td&gt;&lt;td&gt;Bret Easton Ellis&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Misterio y thriller&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Narrativa literaria"&gt;&lt;td&gt;Qué vas a hacer con el resto de tu vida&lt;/td&gt;&lt;td&gt;Laura Ferrero&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Narrativa literaria&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Terror"&gt;&lt;td&gt;Cámara oscura&lt;/td&gt;&lt;td&gt;Alfredo Álamo&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;No&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Terror&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Fantasía"&gt;&lt;td&gt;Una corte de rosas y espinas&lt;/td&gt;&lt;td&gt;Sarah J. Maas&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Fantasía&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Narrativa literaria"&gt;&lt;td&gt;El jardinero y la muerte&lt;/td&gt;&lt;td&gt;Georgi Gospodinov&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Narrativa literaria&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Narrativa literaria"&gt;&lt;td&gt;Espera a la primavera, Bandini&lt;/td&gt;&lt;td&gt;John Fante&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Narrativa literaria&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Narrativa literaria"&gt;&lt;td&gt;Las gratitudes&lt;/td&gt;&lt;td&gt;Delphine de Vigan&lt;/td&gt;&lt;td&gt;Leído&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Narrativa literaria&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Terror"&gt;&lt;td&gt;El fin de los días&lt;/td&gt;&lt;td&gt;Adam L.G. Nevill&lt;/td&gt;&lt;td&gt;Leído&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;★★☆☆☆ 2&lt;/td&gt;&lt;td&gt;Terror&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Misterio y thriller"&gt;&lt;td&gt;A un lado de la carretera&lt;/td&gt;&lt;td&gt;Paul Pen&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Misterio y thriller&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Terror"&gt;&lt;td&gt;Horrorstör&lt;/td&gt;&lt;td&gt;Grady Hendrix&lt;/td&gt;&lt;td&gt;Leído&lt;/td&gt;&lt;td&gt;No&lt;/td&gt;&lt;td&gt;★★★☆☆ 3&lt;/td&gt;&lt;td&gt;Terror&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Psicología"&gt;&lt;td&gt;La sabiduría de los psicópatas: todo lo que los asesinos en serie pueden enseñarnos sobre la vida&lt;/td&gt;&lt;td&gt;Kevin Dutton&lt;/td&gt;&lt;td&gt;Leído&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;★★☆☆☆ 2&lt;/td&gt;&lt;td&gt;Psicología&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Filosofía"&gt;&lt;td&gt;De Kierkegaard a Tomás de Aquino&lt;/td&gt;&lt;td&gt;Leonardo Castellani&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;No&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Filosofía&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Misterio y thriller"&gt;&lt;td&gt;Blaze&lt;/td&gt;&lt;td&gt;Richard Bachman&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Misterio y thriller&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Terror"&gt;&lt;td&gt;Guía del club de lectura para matar vampiros&lt;/td&gt;&lt;td&gt;Grady Hendrix&lt;/td&gt;&lt;td&gt;Leído&lt;/td&gt;&lt;td&gt;No&lt;/td&gt;&lt;td&gt;★★★★☆ 4&lt;/td&gt;&lt;td&gt;Terror&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Narrativa literaria"&gt;&lt;td&gt;Stoner&lt;/td&gt;&lt;td&gt;John Williams&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Narrativa literaria&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Narrativa literaria"&gt;&lt;td&gt;La tregua&lt;/td&gt;&lt;td&gt;Mario Benedetti&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Narrativa literaria&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Ciencia ficción y distopía"&gt;&lt;td&gt;El fugitivo&lt;/td&gt;&lt;td&gt;Richard Bachman&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Ciencia ficción y distopía&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Terror"&gt;&lt;td&gt;The September House&lt;/td&gt;&lt;td&gt;Carissa Orlando&lt;/td&gt;&lt;td&gt;Sin leer&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Terror&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Terror"&gt;&lt;td&gt;La casa de hojas&lt;/td&gt;&lt;td&gt;Mark Z. Danielewski&lt;/td&gt;&lt;td&gt;Leyendo&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Terror&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Novela histórica"&gt;&lt;td&gt;La sombra del padre: Historia de José de Nazaret&lt;/td&gt;&lt;td&gt;Jan Dobraczyński&lt;/td&gt;&lt;td&gt;Leído&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;★★★★☆ 4&lt;/td&gt;&lt;td&gt;Novela histórica&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Narrativa literaria"&gt;&lt;td&gt;Mis días en la librería Morisaki&lt;/td&gt;&lt;td&gt;Satoshi Yagisawa&lt;/td&gt;&lt;td&gt;Leyendo&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Narrativa literaria&lt;/td&gt;&lt;/tr&gt;
+&lt;tr data-generos="Terror"&gt;&lt;td&gt;La Octava Plaga&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Leyendo&lt;/td&gt;&lt;td&gt;Sí&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;Terror&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p id="no-results" style="display:none;margin-top:1rem;color:#888"&gt;No se encontraron resultados.&lt;/p&gt;
+&lt;/main&gt;
+&lt;script&gt;
+(function(){var box=document.getElementById('search-box');var rows=document.getElementById('catalog-body').querySelectorAll('tr');var noRes=document.getElementById('no-results');box.addEventListener('input',function(){var q=box.value.toLowerCase();var count=0;for(var i=0;i&lt;rows.length;i++){var r=rows[i];var txt=r.textContent.toLowerCase();var gen=(r.getAttribute('data-generos')||'').toLowerCase();if(txt.indexOf(q)!==-1||gen.indexOf(q)!==-1){r.style.display='';count++}else{r.style.display='none'}}noRes.style.display=count===0?'block':'none'});})();
+&lt;/script&gt;
+&lt;/body&gt;&lt;/html&gt;
