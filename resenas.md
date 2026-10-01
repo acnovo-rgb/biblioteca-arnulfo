@@ -4,6 +4,8 @@ title: Mis reseñas
 
 # Mis reseñas
 
-[Inicio](./) · [Catálogo](catalogo-full.html) · [Mis reseñas](resenas) · [Archivo](archivo.html)
+[Inicio](./) · [Catálogo](catalogo-full.html) · [Mis reseñas](resenas-full.html) · [Archivo](archivo.html)
 
-Migración de reseñas en curso. El contenido se incorporará desde la biblioteca maestra sin modificar el catálogo.
+La colección completa contiene **102 reseñas** recuperadas de la biblioteca maestra.
+
+[Ver las 102 reseñas](resenas-full.html)
